@@ -1,0 +1,17 @@
+﻿@page "/genre/create"
+
+<h3>CreateGenre</h3>
+
+<GenreForm Genre="genre" OnValidSubmit="Create">
+
+</GenreForm>
+  
+@code {
+    private Genre genre = new Genre();
+
+    private void Create()
+    {
+        Console.WriteLine("Create");
+        Console.WriteLine(genre.Name);
+    }
+}
